@@ -1,5 +1,5 @@
 $date
-	Mon Sep 14 17:23:30 2026
+	Sat Sep 19 01:38:05 2026
 $end
 $version
 	Icarus Verilog
@@ -8,25 +8,25 @@ $timescale
 	1ps
 $end
 $scope module or_gate_tb $end
-$var wire 1 ! y_st $end
-$var wire 1 " y_df $end
-$var wire 1 # y_bh $end
+$var wire 1 ! out_st $end
+$var wire 1 " out_df $end
+$var wire 1 # out_bh $end
 $var reg 1 $ a $end
 $var reg 1 % b $end
 $scope module dut_bh $end
 $var wire 1 $ a $end
 $var wire 1 % b $end
-$var reg 1 # y $end
+$var reg 1 # out $end
 $upscope $end
 $scope module dut_df $end
 $var wire 1 $ a $end
 $var wire 1 % b $end
-$var wire 1 " y $end
+$var wire 1 " out $end
 $upscope $end
 $scope module dut_st $end
 $var wire 1 $ a $end
 $var wire 1 % b $end
-$var wire 1 ! y $end
+$var wire 1 ! out $end
 $upscope $end
 $upscope $end
 $enddefinitions $end

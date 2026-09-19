@@ -1,30 +1,30 @@
 `timescale 1ns / 1ps
 
-module or_gate_tb;
+module nand_gate_tb;
         reg a, b;
         wire out_df, out_bh, out_st;
 
-        or_gate_df dut_df (
+        nand_gate_df dut_df (
             .a(a),
             .b(b),
             .out(out_df)
         );
 
-        or_gate_bh dut_bh (
+        nand_gate_bh dut_bh (
             .a(a),
             .b(b),
             .out(out_bh)
         );
 
-        or_gate_st dut_st (
+        nand_gate_st dut_st (
             .a(a),
             .b(b),
             .out(out_st)
         );
 
         initial begin
-            $dumpfile("or_gate_tb.vcd");
-            $dumpvars(0, or_gate_tb);
+            $dumpfile("nand_gate_tb.vcd");
+            $dumpvars(0, nand_gate_tb);
             $monitor("Time=%0t ns | a=%b b=%b | out_df=%b out_bh=%b out_st=%b", $time, a, b, out_df, out_bh, out_st);
 
             a = 0; b = 0; #10;

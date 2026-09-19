@@ -1,0 +1,91 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "14.0 (devel)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000027D69E7E590 .scope module, "nand_gate_tb" "nand_gate_tb" 2 3;
+ .timescale -9 -12;
+v0000027D69EDB660_0 .var "a", 0 0;
+v0000027D69EDB340_0 .var "b", 0 0;
+v0000027D69EDB200_0 .net "out_bh", 0 0, v0000027D69E51850_0;  1 drivers
+v0000027D69EDA8A0_0 .net "out_df", 0 0, L_0000027D69E698C0;  1 drivers
+v0000027D69EDAA80_0 .net "out_st", 0 0, L_0000027D69E69930;  1 drivers
+S_0000027D69E51620 .scope module, "dut_bh" "nand_gate_bh" 2 13, 3 11 0, S_0000027D69E7E590;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "out";
+v0000027D69E517B0_0 .net "a", 0 0, v0000027D69EDB660_0;  1 drivers
+v0000027D69E91EC0_0 .net "b", 0 0, v0000027D69EDB340_0;  1 drivers
+v0000027D69E51850_0 .var "out", 0 0;
+E_0000027D69E7EB00 .event anyedge, v0000027D69E517B0_0, v0000027D69E91EC0_0;
+S_0000027D69E518F0 .scope module, "dut_df" "nand_gate_df" 2 7, 3 2 0, S_0000027D69E7E590;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "out";
+L_0000027D69E69AF0 .functor AND 1, v0000027D69EDB660_0, v0000027D69EDB340_0, C4<1>, C4<1>;
+L_0000027D69E698C0 .functor NOT 1, L_0000027D69E69AF0, C4<0>, C4<0>, C4<0>;
+v0000027D69EDA940_0 .net *"_ivl_0", 0 0, L_0000027D69E69AF0;  1 drivers
+v0000027D69EDB7A0_0 .net "a", 0 0, v0000027D69EDB660_0;  alias, 1 drivers
+v0000027D69EDB2A0_0 .net "b", 0 0, v0000027D69EDB340_0;  alias, 1 drivers
+v0000027D69EDAD00_0 .net "out", 0 0, L_0000027D69E698C0;  alias, 1 drivers
+S_0000027D69E8D860 .scope module, "dut_st" "nand_gate_st" 2 19, 3 23 0, S_0000027D69E7E590;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "out";
+L_0000027D69E69B60 .functor AND 1, v0000027D69EDB660_0, v0000027D69EDB340_0, C4<1>, C4<1>;
+L_0000027D69E69930 .functor NOT 1, L_0000027D69E69B60, C4<0>, C4<0>, C4<0>;
+v0000027D69EDB480_0 .net "a", 0 0, v0000027D69EDB660_0;  alias, 1 drivers
+v0000027D69EDB520_0 .net "and_out", 0 0, L_0000027D69E69B60;  1 drivers
+v0000027D69EDB160_0 .net "b", 0 0, v0000027D69EDB340_0;  alias, 1 drivers
+v0000027D69EDA9E0_0 .net "out", 0 0, L_0000027D69E69930;  alias, 1 drivers
+    .scope S_0000027D69E51620;
+T_0 ;
+    %wait E_0000027D69E7EB00;
+    %load/vec4 v0000027D69E517B0_0;
+    %load/vec4 v0000027D69E91EC0_0;
+    %and;
+    %inv;
+    %store/vec4 v0000027D69E51850_0, 0, 1;
+    %jmp T_0;
+    .thread T_0, $push;
+    .scope S_0000027D69E7E590;
+T_1 ;
+    %vpi_call 2 26 "$dumpfile", "nand_gate_tb.vcd" {0 0 0};
+    %vpi_call 2 27 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000027D69E7E590 {0 0 0};
+    %vpi_call 2 28 "$monitor", "Time=%0t ns | a=%b b=%b | out_df=%b out_bh=%b out_st=%b", $time, v0000027D69EDB660_0, v0000027D69EDB340_0, v0000027D69EDA8A0_0, v0000027D69EDB200_0, v0000027D69EDAA80_0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000027D69EDB660_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000027D69EDB340_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000027D69EDB660_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000027D69EDB340_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000027D69EDB660_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000027D69EDB340_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000027D69EDB660_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000027D69EDB340_0, 0, 1;
+    %delay 10000, 0;
+    %vpi_call 2 35 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "nand_gate_tb.v";
+    "nand_gate.v";

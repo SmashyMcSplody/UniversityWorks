@@ -1,25 +1,25 @@
-// NOT Gate - Dataflow style
+// NOT Gate - Dataflow
 module not_gate_df (
     input a,
-    output y
+    output out
 );
-    assign y = ~a;
+    assign out = ~a;
 endmodule
 
-// NOT Gate - Behavioral style
+// NOT Gate - Behavioral
 module not_gate_bh (
     input a,
-    output reg y
+    output reg out
 );
     always @(*) begin
-        y = ~a;
+        out = ~a;
     end
 endmodule
 
-// NOT Gate - Structural style
+// NOT Gate - Structural
 module not_gate_st (
     input a,
-    output y
+    output out
 );
-    not not1 (y, a);
+    not not1 (out, a);
 endmodule

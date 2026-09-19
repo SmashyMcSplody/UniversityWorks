@@ -1,28 +1,28 @@
-// OR Gate - Dataflow style
+// OR Gate - Dataflow
 module or_gate_df (
     input a,
     input b,
-    output y
+    output out
 );
-    assign y = a | b;
+    assign out = a | b;
 endmodule
 
-// OR Gate - Behavioral style
+// OR Gate - Behavioral
 module or_gate_bh (
     input a,
     input b,
-    output reg y
+    output reg out
 );
     always @(*) begin
-        y = a | b;
+        out = a | b;
     end
 endmodule
 
-// OR Gate - Structural style
+// OR Gate - Structural
 module or_gate_st (
     input a,
     input b,
-    output y
+    output out
 );
-    or or1 (y, a, b);
+    or or1 (out, a, b);
 endmodule

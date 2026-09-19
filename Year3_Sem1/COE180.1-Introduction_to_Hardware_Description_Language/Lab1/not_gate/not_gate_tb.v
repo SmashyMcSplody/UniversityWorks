@@ -2,27 +2,27 @@
 
 module not_gate_tb;
         reg a;
-        wire y_df, y_bh, y_st;
+        wire out_df, out_bh, out_st;
 
         not_gate_df dut_df (
             .a(a),
-            .y(y_df)
+            .out(out_df)
         );
 
         not_gate_bh dut_bh (
             .a(a),
-            .y(y_bh)
+            .out(out_bh)
         );
 
         not_gate_st dut_st (
             .a(a),
-            .y(y_st)
+            .out(out_st)
         );
 
         initial begin
             $dumpfile("not_gate_tb.vcd");
             $dumpvars(0, not_gate_tb);
-            $monitor("Time=%0t ns | a=%b | y=%b", $time, a, y_df);
+            $monitor("Time=%0t ns | a=%b | out_df=%b out_bh=%b out_st=%b", $time, a, out_df, out_bh, out_st);
 
             a = 0; #10;
             a = 1; #10;
