@@ -1,0 +1,203 @@
+$date
+	Sun Sep 27 21:48:37 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module adder_subtractor_4bit_tb $end
+$var wire 4 ! result [3:0] $end
+$var wire 1 " cout $end
+$var reg 4 # a [3:0] $end
+$var reg 4 $ b [3:0] $end
+$var reg 1 % ctrl $end
+$scope module dut $end
+$var wire 4 & a [3:0] $end
+$var wire 4 ' b [3:0] $end
+$var wire 1 % ctrl $end
+$var wire 4 ( result [3:0] $end
+$var wire 1 " cout $end
+$var wire 3 ) carry [2:0] $end
+$var wire 4 * b_xor [3:0] $end
+$scope module fa0 $end
+$var wire 1 + a $end
+$var wire 1 , b $end
+$var wire 1 % cin $end
+$var wire 1 - cout $end
+$var wire 1 . sum $end
+$upscope $end
+$scope module fa1 $end
+$var wire 1 / a $end
+$var wire 1 0 b $end
+$var wire 1 1 cin $end
+$var wire 1 2 cout $end
+$var wire 1 3 sum $end
+$upscope $end
+$scope module fa2 $end
+$var wire 1 4 a $end
+$var wire 1 5 b $end
+$var wire 1 6 cin $end
+$var wire 1 7 cout $end
+$var wire 1 8 sum $end
+$upscope $end
+$scope module fa3 $end
+$var wire 1 9 a $end
+$var wire 1 : b $end
+$var wire 1 ; cin $end
+$var wire 1 " cout $end
+$var wire 1 < sum $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0<
+0;
+0:
+09
+18
+07
+16
+05
+04
+03
+12
+11
+00
+1/
+0.
+1-
+1,
+1+
+b1 *
+b11 )
+b100 (
+b1 '
+b11 &
+0%
+b1 $
+b11 #
+0"
+b100 !
+$end
+#10000
+01
+1<
+1.
+0-
+03
+1;
+b110 )
+0,
+10
+15
+b1101 !
+b1101 (
+17
+b110 *
+18
+14
+b110 $
+b110 '
+b111 #
+b111 &
+#20000
+1;
+17
+16
+11
+b111 )
+0.
+1-
+03
+12
+08
+1,
+00
+05
+b0 !
+b0 (
+1"
+b1 *
+0<
+19
+b1 $
+b1 '
+b1111 #
+b1111 &
+#30000
+06
+08
+b101 )
+02
+1"
+0,
+15
+1:
+13
+0<
+b1100 *
+b10 !
+b10 (
+0.
+0/
+09
+1%
+b11 $
+b11 '
+b101 #
+b101 &
+#40000
+0"
+16
+1<
+0;
+10
+05
+12
+b1110 !
+b1110 (
+b11 )
+b1010 *
+13
+18
+07
+1/
+04
+b101 $
+b101 '
+b11 #
+b11 &
+#50000
+1;
+16
+12
+17
+08
+11
+b111 )
+1,
+15
+0:
+1-
+b0 !
+b0 (
+b111 *
+0.
+03
+0<
+1"
+0+
+0/
+19
+b1000 $
+b1000 '
+b1000 #
+b1000 &
+#60000

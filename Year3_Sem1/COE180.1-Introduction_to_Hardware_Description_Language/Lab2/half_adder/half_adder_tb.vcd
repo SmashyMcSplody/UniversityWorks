@@ -1,0 +1,69 @@
+$date
+	Sun Sep 27 11:48:58 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module half_adder_tb $end
+$var wire 1 ! sum_st $end
+$var wire 1 " sum_df $end
+$var wire 1 # sum_bh $end
+$var wire 1 $ carry_st $end
+$var wire 1 % carry_df $end
+$var wire 1 & carry_bh $end
+$var reg 1 ' a $end
+$var reg 1 ( b $end
+$scope module dut_bh $end
+$var wire 1 ' a $end
+$var wire 1 ( b $end
+$var reg 1 & carry $end
+$var reg 1 # sum $end
+$upscope $end
+$scope module dut_df $end
+$var wire 1 ' a $end
+$var wire 1 ( b $end
+$var wire 1 % carry $end
+$var wire 1 " sum $end
+$upscope $end
+$scope module dut_st $end
+$var wire 1 ' a $end
+$var wire 1 ( b $end
+$var wire 1 $ carry $end
+$var wire 1 ! sum $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#10000
+1#
+1"
+1!
+1(
+#20000
+0(
+1'
+#30000
+1&
+0#
+0"
+1%
+0!
+1$
+1(
+#40000
