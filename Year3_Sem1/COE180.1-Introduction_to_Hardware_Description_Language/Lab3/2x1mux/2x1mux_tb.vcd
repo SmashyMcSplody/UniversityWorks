@@ -1,0 +1,113 @@
+$date
+	Sun Oct 11 20:24:15 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module mux2x1_tb $end
+$var wire 1 ! OUT_st $end
+$var wire 1 " OUT_df $end
+$var wire 1 # OUT_bh $end
+$var reg 1 $ A $end
+$var reg 1 % B $end
+$var reg 1 & X $end
+$scope module dut_bh $end
+$var wire 1 $ A $end
+$var wire 1 % B $end
+$var wire 1 & X $end
+$var reg 1 # OUT $end
+$upscope $end
+$scope module dut_df $end
+$var wire 1 $ A $end
+$var wire 1 % B $end
+$var wire 1 " OUT $end
+$var wire 1 & X $end
+$upscope $end
+$scope module dut_st $end
+$var wire 1 $ A $end
+$var wire 1 % B $end
+$var wire 1 & X $end
+$var wire 1 ' tB $end
+$var wire 1 ( tA $end
+$var wire 1 ) nX $end
+$var wire 1 ! OUT $end
+$scope module g1 $end
+$var wire 1 $ a $end
+$var wire 1 ) b $end
+$var reg 1 ( y $end
+$upscope $end
+$scope module g2 $end
+$var wire 1 % a $end
+$var wire 1 & b $end
+$var reg 1 ' y $end
+$upscope $end
+$scope module g3 $end
+$var wire 1 ( a $end
+$var wire 1 ' b $end
+$var reg 1 ! out $end
+$upscope $end
+$scope module n1 $end
+$var wire 1 & a $end
+$var reg 1 ) out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1)
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#10000
+1"
+1!
+1#
+1(
+1$
+#20000
+0"
+0!
+0(
+0#
+0$
+1%
+#30000
+1"
+1!
+1#
+1(
+1$
+#40000
+0"
+0!
+0(
+0#
+0)
+0$
+0%
+1&
+#50000
+1$
+#60000
+1"
+1!
+1#
+1'
+0$
+1%
+#70000
+1$
+#90000

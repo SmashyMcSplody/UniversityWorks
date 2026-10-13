@@ -1,0 +1,247 @@
+$date
+	Sun Oct 11 21:26:42 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module mux4x1_tb $end
+$var wire 1 ! OUT_st $end
+$var wire 1 " OUT_df $end
+$var wire 1 # OUT_bh $end
+$var reg 1 $ A $end
+$var reg 1 % B $end
+$var reg 1 & C $end
+$var reg 1 ' D $end
+$var reg 1 ( X $end
+$var reg 1 ) Y $end
+$scope module dut_bh $end
+$var wire 1 $ A $end
+$var wire 1 % B $end
+$var wire 1 & C $end
+$var wire 1 ' D $end
+$var wire 1 ( X $end
+$var wire 1 ) Y $end
+$var reg 1 # OUT $end
+$upscope $end
+$scope module dut_df $end
+$var wire 1 $ A $end
+$var wire 1 % B $end
+$var wire 1 & C $end
+$var wire 1 ' D $end
+$var wire 1 " OUT $end
+$var wire 1 ( X $end
+$var wire 1 ) Y $end
+$upscope $end
+$scope module dut_st $end
+$var wire 1 $ A $end
+$var wire 1 % B $end
+$var wire 1 & C $end
+$var wire 1 ' D $end
+$var wire 1 ( X $end
+$var wire 1 ) Y $end
+$var wire 1 * o23 $end
+$var wire 1 + o01 $end
+$var wire 1 , nY $end
+$var wire 1 - nX $end
+$var wire 1 . d3 $end
+$var wire 1 / d2 $end
+$var wire 1 0 d1 $end
+$var wire 1 1 d0 $end
+$var wire 1 ! OUT $end
+$scope module a0 $end
+$var wire 1 $ a $end
+$var wire 1 1 out $end
+$var wire 1 - c $end
+$var wire 1 , b $end
+$var wire 1 2 ab $end
+$scope module g1 $end
+$var wire 1 $ a $end
+$var wire 1 , b $end
+$var reg 1 2 y $end
+$upscope $end
+$scope module g2 $end
+$var wire 1 2 a $end
+$var wire 1 - b $end
+$var reg 1 1 y $end
+$upscope $end
+$upscope $end
+$scope module a1 $end
+$var wire 1 % a $end
+$var wire 1 ( c $end
+$var wire 1 0 out $end
+$var wire 1 , b $end
+$var wire 1 3 ab $end
+$scope module g1 $end
+$var wire 1 % a $end
+$var wire 1 , b $end
+$var reg 1 3 y $end
+$upscope $end
+$scope module g2 $end
+$var wire 1 3 a $end
+$var wire 1 ( b $end
+$var reg 1 0 y $end
+$upscope $end
+$upscope $end
+$scope module a2 $end
+$var wire 1 & a $end
+$var wire 1 ) b $end
+$var wire 1 / out $end
+$var wire 1 - c $end
+$var wire 1 4 ab $end
+$scope module g1 $end
+$var wire 1 & a $end
+$var wire 1 ) b $end
+$var reg 1 4 y $end
+$upscope $end
+$scope module g2 $end
+$var wire 1 4 a $end
+$var wire 1 - b $end
+$var reg 1 / y $end
+$upscope $end
+$upscope $end
+$scope module a3 $end
+$var wire 1 ' a $end
+$var wire 1 ) b $end
+$var wire 1 ( c $end
+$var wire 1 . out $end
+$var wire 1 5 ab $end
+$scope module g1 $end
+$var wire 1 ' a $end
+$var wire 1 ) b $end
+$var reg 1 5 y $end
+$upscope $end
+$scope module g2 $end
+$var wire 1 5 a $end
+$var wire 1 ( b $end
+$var reg 1 . y $end
+$upscope $end
+$upscope $end
+$scope module n1 $end
+$var wire 1 ( a $end
+$var reg 1 - out $end
+$upscope $end
+$scope module n2 $end
+$var wire 1 ) a $end
+$var reg 1 , out $end
+$upscope $end
+$scope module o0 $end
+$var wire 1 1 a $end
+$var wire 1 0 b $end
+$var reg 1 + out $end
+$upscope $end
+$scope module o1 $end
+$var wire 1 / a $end
+$var wire 1 . b $end
+$var reg 1 * out $end
+$upscope $end
+$scope module o2 $end
+$var wire 1 + a $end
+$var wire 1 * b $end
+$var reg 1 ! out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+05
+04
+13
+02
+01
+00
+0/
+0.
+1-
+1,
+0+
+0*
+0)
+0(
+1'
+0&
+1%
+0$
+0#
+0"
+0!
+$end
+#10000
+1"
+1!
+1+
+1#
+10
+0-
+1(
+#20000
+0"
+0!
+0+
+03
+00
+1-
+0#
+15
+0,
+0(
+1)
+#30000
+1"
+1!
+1*
+1#
+1.
+0-
+1(
+#40000
+1+
+0*
+11
+12
+1"
+0.
+1-
+1,
+05
+0(
+0)
+0'
+1&
+0%
+1$
+#50000
+0"
+0!
+0+
+01
+0#
+0-
+1(
+#60000
+1"
+1!
+1*
+1/
+02
+1-
+1#
+14
+0,
+0(
+1)
+#70000
+0"
+0!
+0*
+0/
+0#
+0-
+1(
+#90000
